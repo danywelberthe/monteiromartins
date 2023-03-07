@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: .3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #b6b6b6;
+}
+
+/* ---------- header */
+header {
+    position: sticky;
+    top: 0;
+}
+
+.nav-bar {
+    background: #1b2931;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 6rem;
+    z-index: 1;
+}
+
+
+.nav-bar a {
+    color: #fff;
+  
+}
+
+.nav-bar a:hover {
+    color: rgb(228, 102, 57);
+}
+
+.logo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo #title-logo {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.logo #sub-logo {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#responsive-menu-icon {
+    display: none;
+}
+
+#responsive-menu-icon .menu-icon {
+    width: 40px;
+    height: 25px;
+    font-size: 32px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#nav-list {
+    transition: .3s;
+}
+
+#nav-list ul {
+    display: flex;
+    gap: 25px;
+}
+
+/* ---------- sobre */
+#sobre {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.981),
+                       rgba(0, 0, 0, 0)), url(./imgs/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#sobre p {
+    width: 40rem;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+/* ---------- projetos */
+#projetos {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding: 20px;
+}
+
+#projetos h2 {
+    color: #fff;
+}
+
+.obras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.obra {
+    height: 300px;
+    width: 250px;
+    border: 1px solid rgba(222, 218, 218, 0.668);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.obra-img {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.obra-img img {
+    position: absolute;
+    width: 100%;
+}
+
+/* americanas */
+.obra-americanas .obra-img img {
+    top: -70px;
+}
+
+/* residencial */
+.obra-residencial .obra-img img {
+    height: 100%;
+}
+
+.obra-descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 100px;
+}
+
+.obra-descricao button {
+    cursor: pointer;
+    height: 30px;
+    width: 70px;
+    background-color: rgb(228, 102, 57);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* ---------- missão  */
+#missao-div {
+    height: 500px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+#missao-div h1 {
+    font-size: 32px;
+}
+
+#missao-div p, li {
+    font-size: 22px;
+}
+
+#missao, #visao, #valores {
+    text-align: center;
+}
+
+/* ---------- contato */
+#contato {
+    height: 500px;
+    display: flex;
+    padding: 25px;
+    color: #fff;
+    gap: 40px;
+    justify-content: center;
+}
+
+.contato-img img {
+    height: 100%;
+}
+
+form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+form h1 {
+    margin-bottom: 20px;
+}
+  
+form input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin-top: 5px;
+    outline: none;
+    font-size: 15px;
+    border: none;
+}
+  
+form #texto {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    outline: none;
+    font-size: 15px;
+    border: none;
+}
+  
+form button {
+    padding: 5px;
+    width: 80px;
+    cursor: pointer;
+    border: none;
+}
+
+/* ---------- footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background-color: #1b2931;
+}
+
+
+/* ---------- responsive layout */
+@media screen and (max-width: 990px) {
+    #sobre p {
+        width: 30rem;
+    }
+    
+}
+@media screen and (max-width: 790px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+        flex-wrap: wrap
+        ;
+    }
+
+    #responsive-menu-icon {
+        display: inline-block;
+    }
+
+    #nav-list {
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    #nav-list.active {
+        height: 265px;
+    }
+
+    #nav-list ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 25px;
+        border: none;
+        width: 100%;
+    }
+
+    #nav-list ul li {
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+    }
+
+    #sobre p {
+        width: 20rem;
+    }
+}

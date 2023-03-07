@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monteiro Martins | Engenharia e Construções</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- navbar -->
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="#">
+            <span id="title-logo">monteiro martins</span>
+            <span id="sub-logo">engenharia e construções</span>
+          </a>
+        </div>
+
+        <div id="responsive-menu-icon">
+          <button class="menu-icon">=</button>
+        </div>
+
+        <div id="nav-list">
+          <ul>
+            <li class="nav-item"><a href="#">Quem somos</a></li>
+            <li class="nav-item"><a href="#projetos">Projetos</a></li>
+            <li class="nav-item"><a href="#missao">Missão</a></li>
+            <li class="nav-item"><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- sobre -->
+    <div id="sobre">
+      <p>
+        Especializada em execução de obras e reformas em geral, gerenciamento
+        estratégico de projetos, gestão de custos, de risco e cronograma em
+        projetos.
+      </p>
+    </div>
+
+    <!-- projetos -->
+    <div id="projetos">
+      <h2>Meus Projetos</h2>
+      <div class="obras">
+        <!-- americanas -->
+        <div class="obra obra-americanas">
+          <div class="obra-img">
+            <img src="./src/imgs/americanas.jpeg" alt="" />
+          </div>
+
+          <div class="obra-descricao">
+            <p>Americanas</p>
+            <button>confira</button>
+          </div>
+        </div>
+
+        <!-- laura -->
+        <div class="obra obra-laura">
+          <div class="obra-img">
+            <img src="./src/imgs/laura.jpeg" alt="" />
+          </div>
+
+          <div class="obra-descricao">
+            <p>Laura</p>
+            <button>confira</button>
+          </div>
+        </div>
+
+        <!-- residencial -->
+        <div class="obra obra-residencial">
+          <div class="obra-img">
+            <img src="./src/imgs/residencial.jpeg" alt="" />
+          </div>
+
+          <div class="obra-descricao">
+            <p>Residencial</p>
+            <button>confira</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- misssão -->
+    <div id="missao-div">
+      <div id="missao">
+        <h1>Missão</h1>
+        <p>
+          Desenvolver e executar serviços sustentáveis de engenharia civil para
+          o mercado.
+        </p>
+      </div>
+
+      <div id="visao">
+        <h1>Visão</h1>
+        <p>Ser uma empresa referência em qualidade no mercado nacional.</p>
+      </div>
+
+      <div id="valores">
+        <h1>Valores</h1>
+        <ul>
+          <li>
+            O respeito à integridade, o comportamento, a transparência, a ética
+            e a moral entre todos os níveis hierárquicos.
+          </li>
+          <li>Agregar valores a comunidade na qual está inserida.</li>
+          <li>
+            Promover a sustentabilidade ao meio ambiente nos segmentos de
+            negócio.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- contato -->
+    <div id="contato">
+      <div class="contato-img">
+        <img src="./src/imgs/contato.jpg" alt="" />
+      </div>
+
+      <div class="formulario-contato">
+        <form
+          action="https://formsubmit.co/patrik.andradef@gmail.com"
+          method="POST"
+        >
+          <h1>Entre em contato</h1>
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome_usuario" />
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email_usuario" />
+          </div>
+          <div>
+            <label for="texto">Mensagem:</label>
+            <textarea id="texto" name="texto_usuario" rows="10"></textarea>
+          </div>
+          <div class="button">
+            <button type="submit">Enviar</button>
+          </div>
+
+          <!-- input hidden -->
+          <input type="hidden" name="_subject" value="Novo Contato!" />
+          <input type="text" name="_honey" style="display: none" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/#contato"
+          />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>© Copyright, todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
